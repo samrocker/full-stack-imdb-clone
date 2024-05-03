@@ -1,33 +1,129 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#main {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235711770400657539/Homepage_Hero.png?ex=66355dc4&is=66340c44&hm=e1e0898874e29e86bdfd538af89dd9534a03d50372c2c3ccc388fc2ac02b51b4&");
+  background-size: cover;
+  background-position: bottom;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+#slider {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235711770400657539/Homepage_Hero.png?ex=66355dc4&is=66340c44&hm=e1e0898874e29e86bdfd538af89dd9534a03d50372c2c3ccc388fc2ac02b51b4&");
+  background-size: cover;
+  background-position: center;
+}
+
+#card1 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235280414323511327/movies_poster_right_bg-1.png?ex=66351d89&is=6633cc09&hm=48eb98055fdf4ffc7cfb3d4e75dff23119638b33e171705c4f84afa96476c85e&");
+  background-size: cover;
+}
+
+#card2 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235280414613180538/movies_poster_right_bg-2.png?ex=66351d89&is=6633cc09&hm=4e04921e12c5b7bf09c1dd3d140753d2a3ae72ef67f15b4d9f435d52495987c7&");
+  background-size: cover;
+}
+
+#card3 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235280415049384119/movies_poster_right_bg-3.png?ex=66351d89&is=6633cc09&hm=fe95055ca2744201888bf0b49928aad2d6f9d4cae9053f0634cc8abe0b989ee0&");
+  background-size: cover;
+}
+
+#banner1 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235280413274935306/movies_poster_right_1_-_Copy.png?ex=66351d88&is=6633cc08&hm=3a1cf4c817e5125567b3d33b168faf11a31006a689f5525bc4c1f0ea9ee25ff9&");
+  background-size: cover;
+}
+
+#banner2 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235280413937893496/movies_poster_right_2.png?ex=66351d89&is=6633cc09&hm=9db3657e1daed6ba538f59c2a2c2478f149515fe43ffaa8ac0832660d1ab0a52&");
+  background-size: cover;
+}
+
+#banner3 {
+  background-image: url("https://cdn.discordapp.com/attachments/1221566946135244860/1235704770216591461/movies_poster_right_3.png?ex=6635573f&is=663405bf&hm=e9383aed05e54549b2e5c5e4e7d078d083d035da78839eb66a842627d808641e&");
+  background-size: cover;
+}
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer utilities {
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+  
+    .flex-between {
+      @apply flex justify-between items-center;
+    }
   }
-}
+  
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
